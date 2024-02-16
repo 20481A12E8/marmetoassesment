@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="product-images">
+                <img id="product-image" src="" alt="Product Image">
+                <div class="thumbnails" id="thumbnail-container"></div>
+            </div>
+        </div>
+        <div class="right-section">
+            <h2 id="product-vendor"></h2>
+            <h1 id="product-title"></h1>
+            <div style="border: 1px     solid rgb(190, 190, 190);  width: 100%;"></div>
+
+            <p id="price"></p>
+            <p id="compare-at-price"></p>
+            <div class="variant-selector" id="color-selector"></div>
+            <div style="border: 1px solid rgb(190, 190, 190);  width: 100%;"></div>
+            <p class="tt">choose size</p>
+            <div class="variant-selector" id="size-selector" style="margin-top: -2rem;"></div>
+            <div class="quantity-selector">
+                <label for="quantity-input" style="color: #a1a1a1;">Quantity : </label>
+                <input type="number" id="quantity-input" value="1" min="1">&nbsp;&nbsp;
+                <button class="add-to-cart" id="add-to-cart-btn">Add to Cart</button>
+
+            </div>
+            <div class="cart-message" id="cart-message"></div>
+            <div style="border: 1px solid rgb(190, 190, 190); width: 100%;"></div>
+
+            <p id="description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
